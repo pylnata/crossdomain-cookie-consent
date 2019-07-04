@@ -22,6 +22,7 @@ Let's consider that portal has address http://portal.com and we want to have sha
         'DOMContentLoaded',
         function() {
           new SharedCookieConsent({
+            portalDomain: 'portal.com',
             receivePage: 'http://portal.com/receive.html',
             allowedDomains: ['site1.com', 'site2.com'],
           })
@@ -41,7 +42,7 @@ Let's consider that portal has address http://portal.com and we want to have sha
   document.addEventListener(
     'DOMContentLoaded',
     function() {
-      new SharedCookieConsent({ receivePage: 'http://portal.com/receive.html' })
+      new SharedCookieConsent({portalDomain: 'portal.com', receivePage: 'http://portal.com/receive.html' })
     },
     false
   )
