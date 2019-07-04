@@ -10,7 +10,7 @@
   "scripts": {
     "build": "webpack",
     "lint": "eslint ./src",
-    "test": "mocha --require @babel/register --require @babel/polyfill"
+    "test": "mocha --require @babel/register --require @babel/polyfill --require ./src/helpers/testHelper.js"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",

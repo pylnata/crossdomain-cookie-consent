@@ -4,7 +4,6 @@ import "chai/register-expect"
 
 import BasePlugin from "../src/plugins/BasePlugin"
 import Options from "../src/Options"
-import { getCookie } from '../src/helpers/cookie';
 
 describe("BasePlugin", function () {
 
@@ -32,10 +31,4 @@ describe("BasePlugin", function () {
       expect(document.getElementById('cc_container')).to.be.null
     }, 1000)
   })
-/*
-  it ('set cookie with name="shared_cookie_consent" and value="yes"', () => {
-    plugin.saveConsentCookie()
-    expect(getCookie(plugin.options.cookieName)).to.be.equal('yes')
-  })
-  */
 })

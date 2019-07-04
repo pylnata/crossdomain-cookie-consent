@@ -1,6 +1,6 @@
 import '../polyfills'
 import { setCookie } from '../helpers/cookie'
-//import styles from '../styles' // TODO problem with mocha
+import styles from '../styles'
 
 class BasePlugin {
   constructor(options) {
@@ -44,7 +44,7 @@ class BasePlugin {
    */
   showConsent() {
     let style = document.createElement('style')
-    //style.innerHTML = styles
+    style.innerHTML = styles
 
     document.body.appendChild(style)
     let div = document.createElement('div')
