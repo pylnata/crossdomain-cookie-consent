@@ -48,7 +48,7 @@ Let's consider that portal has address http://portal.com and we want to have sha
 </script>
 ```
 
-Configuration on CookieConsent:
+Configuration of CookieConsent:
 
 ```javascript
 {
