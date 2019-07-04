@@ -67,4 +67,4 @@ Configuration of CookieConsent:
 }
 ```
 
-This library (with some changes) was created for and is used by foxford.ru projects.
+This library (with some changes) was created for and is used by http://foxford.ru projects.
