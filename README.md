@@ -1,7 +1,7 @@
 # Shared-cookie-consent
 
 This library solves the task to display cookie consent block, shared within group of sites even on different domains. A visitor who has once confirmed his consent to use of cookies on one of the sites of the group will no longer be shown this block on all sites of the group.
-The main idea is that we have main site in group (let's call it a "portal") where we place special static page, which is used to exchange information about visitor has confirmed already the agreement on anyone site placed on another domain from group.
+The main idea is that we have main site in group (let's call it a "portal") where we place special static page, which is used to exchange of information about visitor has confirmed already the agreement at anyone site from the group. 
 
 ## How to use
 
