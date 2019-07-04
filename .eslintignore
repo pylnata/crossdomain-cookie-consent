@@ -1,0 +1,7 @@
+**/flow-typed/**
+**/flow/**
+**/**/*.flow
+**/logs/**
+**/npm/**
+**/build/**
+**/test/**
