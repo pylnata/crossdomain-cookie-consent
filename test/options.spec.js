@@ -2,6 +2,7 @@ import 'chai/register-should'
 import Options from '../src/Options'
 
 describe('Options', () => {
+
   function newOptions() {
     return new Options({
       portalDomain: 'portal.com',

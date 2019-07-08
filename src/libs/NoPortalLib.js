@@ -1,8 +1,8 @@
-import BasePlugin from './BasePlugin'
+import BaseLib from './BaseLib'
 
 import { getCookie, setCookie } from '../helpers/cookie'
 
-export default class NoPortalPlugin extends BasePlugin {
+export default class NoPortalLib extends BaseLib {
   constructor(options) {
     super(options)
     /**

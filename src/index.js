@@ -1,23 +1,23 @@
-import IframePlugin from './plugins/IframePlugin'
-import PortalPlugin from './plugins/PortalPlugin'
-import NoPortalPlugin from './plugins/NoPortalPlugin'
+import IframeLib from './libs/IframeLib'
+import PortalLib from './libs/PortalLib'
+import NoPortalLib from './libs/NoPortalLib'
 import Options from './Options'
 import './polyfills'
 
 export default class SharedCookieConsent {
   constructor(options = {}) {
     this.options = new Options(options)
-    this.modePlugin = this._getPlugin()
-    this.modePlugin.init()
+    this.modeLib = this._getLib()
+    this.modeLib.init()
   }
 
-  _getPlugin() {
+  _getLib() {
     if (window.location.href.includes(this.options.receivePageUrl)) {
-      return new IframePlugin(this.options)
+      return new IframeLib(this.options)
     } else if (window.location.host === this.options.portalDomain) {
-      return new PortalPlugin(this.options)
+      return new PortalLib(this.options)
     } else {
-      return new NoPortalPlugin(this.options)
+      return new NoPortalLib(this.options)
     }
   }
 }

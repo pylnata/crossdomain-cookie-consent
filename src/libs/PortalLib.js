@@ -1,10 +1,10 @@
-import BasePlugin from './BasePlugin'
+import BaseLib from './BaseLib'
 
 import '../polyfills'
 import { getCookie } from '../helpers/cookie'
 import { getQueryString } from '../helpers/url'
 
-export default class PortalPlugin extends BasePlugin {
+export default class PortalLib extends BaseLib {
   init() {
     if (getCookie(this.options.cookieName) || this.saveCookieFromUrl()) {
       return

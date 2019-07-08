@@ -1,9 +1,9 @@
-import BasePlugin from './BasePlugin'
+import BaseLib from './BaseLib'
 
 import { getCookie, setCookie } from '../helpers/cookie'
 import { getQueryString } from '../helpers/url'
 
-export default class IframePlugin extends BasePlugin {
+export default class IframeLib extends BaseLib {
   init() {
     window.addEventListener('message', (event) => {
       /**

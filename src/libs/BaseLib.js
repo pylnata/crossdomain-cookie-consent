@@ -2,7 +2,7 @@ import '../polyfills'
 import { setCookie } from '../helpers/cookie'
 import styles from '../styles'
 
-class BasePlugin {
+class BaseLib {
   constructor(options) {
     this.options = options
     this.agreeActionHandler = this.agreeActionHandler.bind(this)
@@ -57,4 +57,4 @@ class BasePlugin {
   }
 }
 
-export default BasePlugin
+export default BaseLib
