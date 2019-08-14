@@ -8,6 +8,8 @@ The main idea is that we have main site in group (let's call it a "portal") wher
 
 Let's consider that portal has address http://portal.com and we want to have shared cookie consent not only with it's subdomains http://subdomain1.portal.com, http://subdoman2.pportal.com, etc. but also with some sites on another domains http://site1.com, http://site2.com etc.
 
+0. Download file shared-cookie-consent.min.js from https://github.com/pylnata/crossdomain-cookie-consent/releases/tag/0.0.1
+
 1. Create a static page receive.html (name is optional), that is assumed to be opened at address http://portal.com/receive.html and contains:
 
 ```html
@@ -17,7 +19,7 @@ Let's consider that portal has address http://portal.com and we want to have sha
     <meta charset="UTF-8" />
   </head>
   <body>
-    <script src="[PATH_TO_LIBRARY]/shared-cookie-consent.js"></script>
+    <script src="[PATH_TO_LIBRARY]/shared-cookie-consent.min.js"></script>
     <script>
       document.addEventListener(
         'DOMContentLoaded',
