@@ -1,11 +1,12 @@
-# Shared-cookie-consent
+# Crossdomain-cookie-consent
 
-This library solves the task to display cookie consent block, shared within group of sites even on different domains. A visitor who has once confirmed his consent to use of cookies on one of the sites of the group will no longer be shown this block on all sites of the group.
-The main idea is that we have main site in group (let's call it a "portal") where we place special static page, which is used to exchange of information about visitor has confirmed already the agreement at anyone site from the group. 
+This library solves the task to display cookie consent alert, shared within group of sites on different domains. A visitor who has once confirmed his consent to use cookies at one of the sites from the group will no longer be shown this alert at all other sites.
+
+The main idea is that we have main site in group (let's call it a "portal") where we place special static page, that is used for communication between all sites in the group. 
 
 ## How to use
 
-Let's consider that portal has address http://portal.com and we want to have shared cookie consent not only with some it's subdomains http://subdomain1.portal.com, http://subdoman2.pportal.com, etc. but also with some sites on another domains http://site1.com, http://site2.com etc.
+Let's consider that portal has address http://portal.com and we want to have shared cookie consent not only with it's subdomains http://subdomain1.portal.com, http://subdoman2.pportal.com, etc. but also with some sites on another domains http://site1.com, http://site2.com etc.
 
 1. Create a static page receive.html (name is optional), that is assumed to be opened at address http://portal.com/receive.html and contains:
 
@@ -34,7 +35,7 @@ Let's consider that portal has address http://portal.com and we want to have sha
 </html>
 ```
 
-2. In code of every site of group (i.e. portal.com, subdomain*.portal.com, site*.com etc.), where we need shared cookie consent block, add this code below:
+2. In code of every site of group (i.e. portal.com, subdomain*.portal.com, site*.com etc.), where we need shared cookie consent alert, add this code below:
 
 ```html
 <script src="[PATH_TO_LIBRARY]/shared-cookie-consent.js"></script>
